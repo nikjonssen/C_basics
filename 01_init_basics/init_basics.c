@@ -35,14 +35,32 @@ int main() {
   printf("%d\n\n", YEAR);
 
   // Operators
+  // arithmetical: +, -, *, /, %, ++, --
+  // assignment:  =, +=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>=,
+  // comparison: ==, !=, <, >, <=, >=
+  // logical: &&, ||, !
+  // bitwise: &, |, ^, ~, <<, >>
   int myInt;
   int leftShift = 8;
   int rightShift = 16;
   int power = 2;
+  int bin = 8;
+  int binAnd = bin & 3;  // binary AND operation
+  int binOr = bin | 3;  // binary OR operation
+  int binXor = bin ^ 3;  // binary XOR operation
+  int binComp = ~bin + 1;  // binary 1's complement, byte change: 0 to 1 and 1 to 0, important to add +1 as a second step
+  int binShl = bin << 1;  // binary shift left, *2^x
+  int binShr = bin >> 1;  // binary shift right, /2^x
   leftShift = leftShift << power;  // or leftShift <<= power, "left" leftShift * 2^power
-  rightShift = rightShift >> power;  // or rightShift <<= power, "right" rightShift / 2^power
+  rightShift = rightShift >> power;  // or rightShift >>= power, "right" rightShift / 2^power
   printf("Operators:\n");
-  printf("Size of int is %lu bits\n", sizeof(myInt));
+  printf("Binary AND: %d\n", binAnd);
+  printf("Binary OR: %d\n", binOr);
+  printf("Binary XOR: %d\n", binXor);
+  printf("Binary Complementary: %d\n", binComp);
+  printf("Binary Shift Left: %d\n", binShl);
+  printf("Binary Shift Left: %d\n", binShr);
+  printf("Size of int is %lu bits\n", sizeof(myInt)); // long unsigned int (%lu)
   printf("Left shift: %lu, Right shift: %lu\n\n", leftShift, rightShift);
 
   // Booleans

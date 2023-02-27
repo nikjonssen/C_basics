@@ -5,7 +5,7 @@
 // as a convention of 'good practice'
 // therefore in personal projects you can use your own 'expression flow'
 
-// Function declarations:
+// Functions declaration:
 void myVoid();  // void function does not return any value
 void myPerson(char name[], int age);
 void myLoop(int myNumbers[3]);
@@ -31,7 +31,7 @@ int main(){
   return 0;
 };
 
-// Function definitions:
+// Functions definition:
 void myVoid(){
   printf("Void function has been executed\n");
 };
