@@ -16,6 +16,7 @@ int main() {
   printf("%d\n\n", e + f + g);
 
   // Data types
+  // basic types: int (2-4byte), float (4bytes), double (8bytes), char(1byte)
   float num2 = 3.5;
   printf("Data types:\n");
   printf("%.2f\n", num2);
